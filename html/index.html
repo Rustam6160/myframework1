@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная стр</title>
+</head>
+<body>
+    <h1>Главная траница</h1><br><br>
+
+    <a href="/about">О нас</a><br>
+    <a href="/news">Новости</a><br><br>
+
+
+    <h3>Все пользователи:</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Имя</th>
+        </tr>
+
+        {LIST}
+    </table>
+    <br>
+
+
+    <form method="post" action="/reg">
+        <input type="text" name="username" placeholder="Имя"><br>
+        <input type="text" name="password" placeholder="Пароль"><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
